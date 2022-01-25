@@ -1,2 +1,29 @@
-<h1 class = "title is-2"><%= @movie.title %></h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<h2 class = "title is-2"><%= @movie.title %></h2>
+
+<p class = 'mb-5'>
+  <%= @movie.description %>
+</p>
+
+<progress class = "progress is-info" value = "<%= @movie.average_vote %>" max = 10>
+  <%= @movie.average_vote %>
+</progress>
+
+<p>
+  <strong> Rating: </strong>
+  <%= @movie.average_vote%>
+</p>
+
+<p>
+  <strong> Release Year: </strong>
+  <%= @movie.year %>
+</p>
+
+<p>
+  <strong> Duration: </strong>
+  <%= @movie.duration %>
+</p>
+
+<p>
+  <strong> Production Company: </strong>
+  <%= @movie.production_company.name %>
+</p>
