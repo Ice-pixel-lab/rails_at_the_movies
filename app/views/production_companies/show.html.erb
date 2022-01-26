@@ -1,5 +1,5 @@
 <h1 class = "title is-2">Movies made by <%= @production_company.name %></h1>
-
+<% content_for(:html_title) {@production_company.name}%>
 <p class = 'mb-5'>
   This production company made <%= @production_company.movies.count %> of the top 100 movies!
 </p>
