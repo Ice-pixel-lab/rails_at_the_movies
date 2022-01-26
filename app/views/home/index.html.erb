@@ -17,6 +17,7 @@
         <% @production_companies.each do |production_company| %>
         <li>
           <%= link_to production_company.name, production_company %>
+          <%= pluralize production_company.movies.count, "Top Movies" %>
         </li>
         <% end %>
       </ol>
